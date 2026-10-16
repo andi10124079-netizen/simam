@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #263247;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background: #172554;
+    color: white;
+    padding: 28px 18px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.logo-description {
+    font-size: 12px;
+    color: #cbd5e1;
+    margin-bottom: 35px;
+}
+
+.sidebar a {
+    display: block;
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.sidebar a:hover {
+    background: #334780;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 35px;
+}
+
+.page-header {
+    margin-bottom: 28px;
+}
+
+.page-header h1 {
+    margin-bottom: 8px;
+    color: #172554;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 22px;
+}
+
+.stat-number {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    border-radius: 7px;
+    padding: 11px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.button-primary:hover {
+    background: #1d4ed8;
+}
+
+.button-secondary {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.button-edit {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.button-delete {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #eff6ff;
+    color: #1e3a8a;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:hover td {
+    background: #f8fafc;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: 2px solid #bfdbfe;
+    border-color: #2563eb;
+}
+
+.message-success {
+    padding: 13px;
+    border-radius: 7px;
+    background: #dcfce7;
+    color: #166534;
+    margin-bottom: 18px;
+}
+
+.message-error {
+    padding: 13px;
+    border-radius: 7px;
+    background: #fee2e2;
+    color: #991b1b;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+/* Pembungkus tabel agar rapi */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Tabel mahasiswa */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background-color: #1d4ed8;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: #f3f6fb;
+}
+
+/* Tombol umum */
+button,
+.btn {
+    display: inline-block;
+    padding: 9px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 3px;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Tombol hapus */
+.btn-hapus {
+    background-color: #dc2626;
+}
+
+.btn-hapus:hover {
+    background-color: #b91c1c;
+}
+
+/* Tombol edit */
+.btn-edit {
+    background-color: #d97706;
+}
+
+.btn-edit:hover {
+    background-color: #b45309;
+}
+
+/* Input form */
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    margin: 6px 0 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 768px) {
+    th,
+    td {
+        padding: 9px;
+        font-size: 13px;
+    }
+
+    button,
+    .btn {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
